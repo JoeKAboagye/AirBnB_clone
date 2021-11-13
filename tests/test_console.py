@@ -370,7 +370,7 @@ class TestHBNBCommand_all_method(unittest.TestCase):
         with patch("sys.stdout", new=StringIO()) as obtained:
             HBNBCommand().onecmd("create Place")
             instance = 'Place.' + obtained.getvalue().strip()
-            shortcut = obtained.getvalue().strip()
+]            shortcut = obtained.getvalue().strip()
             command = 'Place.destroy("{}")'.format(shortcut)
             self.assertIn(instance, storage.all().keys())
             HBNBCommand().onecmd(command)
@@ -660,7 +660,7 @@ class TestHBNBCommand_all_method(unittest.TestCase):
             HBNBCommand().onecmd("create Place")
         with patch("sys.stdout", new=StringIO()) as obtained:
             HBNBCommand().onecmd("BaseModel.count()")
-            self.assertEqual("16", obtained.getvalue().strip())
+            self.assertEqual("29", obtained.getvalue().strip())
         with patch("sys.stdout", new=StringIO()) as obtained:
             HBNBCommand().onecmd("User.count()")
             self.assertEqual("1", obtained.getvalue().strip())
