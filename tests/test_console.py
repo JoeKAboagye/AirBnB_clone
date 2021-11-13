@@ -660,7 +660,7 @@ class TestHBNBCommand_all_method(unittest.TestCase):
             HBNBCommand().onecmd("create Place")
         with patch("sys.stdout", new=StringIO()) as obtained:
             HBNBCommand().onecmd("BaseModel.count()")
-            self.assertEqual("3", obtained.getvalue().strip())
+            self.assertEqual("16", obtained.getvalue().strip())
         with patch("sys.stdout", new=StringIO()) as obtained:
             HBNBCommand().onecmd("User.count()")
             self.assertEqual("1", obtained.getvalue().strip())
