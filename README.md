@@ -60,8 +60,8 @@ This first part of the project focuses on creating a command interpreter that al
 
 This project was interpreted/compiled and tested on Ubuntu 20.04 LTS using python3 (version 3.8.5).  
 
-To use the console you must have `pyhton3` installed and the repository cloned  
-(`git clone git@github.com:topisteronyango/AirBnB_clone.git`).  
+To use the console you must have `python3` installed and the repository cloned  
+(`git clone https://github.com/topisteronyango/AirBnB_clone.git`).  
 
 To start the console you only need to run `./console` in the root of the repository.  
 
@@ -82,7 +82,7 @@ $
 
 ```
 
-But also in non-interactive mode: (like the Shell project in C)
+But also in non-interactive mode: (like the [Shell project](https://github.com/topisteronyango/simple_shell.git) in C)
 
 ```
 $ echo "help" | ./console.py
