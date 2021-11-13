@@ -507,17 +507,17 @@ class TestHBNBCommand_all_method(unittest.TestCase):
             HBNBCommand().onecmd(command)
             self.assertNotIn("Holberton", obtained.getvalue().strip())
             self.assertNotIn("School", obtained.getvalue().strip())
-            self.assertNotIn("Montevideo", obtained.getvalue().strip())
-            self.assertNotIn("Uruguay", obtained.getvalue().strip())
-            shortcut = '{ "Holberton": "School", "Montevideo": "Uruguay" }'
+            self.assertNotIn("Nairobi", obtained.getvalue().strip())
+            self.assertNotIn("Kenya", obtained.getvalue().strip())
+            shortcut = '{ "Holberton": "School", "Nairobi": "Kenya" }'
             command = 'BaseModel.update("{}", {})'.format(id, shortcut)
             HBNBCommand().onecmd(command)
             command = 'BaseModel.show("{}")'.format(id)
             HBNBCommand().onecmd(command)
             self.assertIn("Holberton", obtained.getvalue().strip())
             self.assertIn("School", obtained.getvalue().strip())
-            self.assertIn("Montevideo", obtained.getvalue().strip())
-            self.assertIn("Uruguay", obtained.getvalue().strip())
+            self.assertIn("Nairobi", obtained.getvalue().strip())
+            self.assertIn("Kenya", obtained.getvalue().strip())
 
     def test_update_dict_User(self):
         with patch("sys.stdout", new=StringIO()) as obtained:
@@ -527,17 +527,17 @@ class TestHBNBCommand_all_method(unittest.TestCase):
             HBNBCommand().onecmd(command)
             self.assertNotIn("Holberton", obtained.getvalue().strip())
             self.assertNotIn("School", obtained.getvalue().strip())
-            self.assertNotIn("Montevideo", obtained.getvalue().strip())
-            self.assertNotIn("Uruguay", obtained.getvalue().strip())
-            shortcut = '{ "Holberton": "School", "Montevideo": "Uruguay" }'
+            self.assertNotIn("Nairobi", obtained.getvalue().strip())
+            self.assertNotIn("Kenya", obtained.getvalue().strip())
+            shortcut = '{ "Holberton": "School", "Nairobi": "Kenya" }'
             command = 'User.update("{}", {})'.format(id, shortcut)
             HBNBCommand().onecmd(command)
             command = 'User.show("{}")'.format(id)
             HBNBCommand().onecmd(command)
             self.assertIn("Holberton", obtained.getvalue().strip())
             self.assertIn("School", obtained.getvalue().strip())
-            self.assertIn("Montevideo", obtained.getvalue().strip())
-            self.assertIn("Uruguay", obtained.getvalue().strip())
+            self.assertIn("Nairobi", obtained.getvalue().strip())
+            self.assertIn("Kenya", obtained.getvalue().strip())
 
     def test_update_dict_State(self):
         with patch("sys.stdout", new=StringIO()) as obtained:
@@ -547,17 +547,17 @@ class TestHBNBCommand_all_method(unittest.TestCase):
             HBNBCommand().onecmd(command)
             self.assertNotIn("Holberton", obtained.getvalue().strip())
             self.assertNotIn("School", obtained.getvalue().strip())
-            self.assertNotIn("Montevideo", obtained.getvalue().strip())
-            self.assertNotIn("Uruguay", obtained.getvalue().strip())
-            shortcut = '{ "Holberton": "School", "Montevideo": "Uruguay" }'
+            self.assertNotIn("Nairobi", obtained.getvalue().strip())
+            self.assertNotIn("Kenya", obtained.getvalue().strip())
+            shortcut = '{ "Holberton": "School", "Nairobi": "Kenya" }'
             command = 'State.update("{}", {})'.format(id, shortcut)
             HBNBCommand().onecmd(command)
             command = 'State.show("{}")'.format(id)
             HBNBCommand().onecmd(command)
             self.assertIn("Holberton", obtained.getvalue().strip())
             self.assertIn("School", obtained.getvalue().strip())
-            self.assertIn("Montevideo", obtained.getvalue().strip())
-            self.assertIn("Uruguay", obtained.getvalue().strip())
+            self.assertIn("Nairobi", obtained.getvalue().strip())
+            self.assertIn("Kenya", obtained.getvalue().strip())
 
     def test_update_dict_City(self):
         with patch("sys.stdout", new=StringIO()) as obtained:
@@ -567,17 +567,17 @@ class TestHBNBCommand_all_method(unittest.TestCase):
             HBNBCommand().onecmd(command)
             self.assertNotIn("Holberton", obtained.getvalue().strip())
             self.assertNotIn("School", obtained.getvalue().strip())
-            self.assertNotIn("Montevideo", obtained.getvalue().strip())
-            self.assertNotIn("Uruguay", obtained.getvalue().strip())
-            shortcut = '{ "Holberton": "School", "Montevideo": "Uruguay" }'
+            self.assertNotIn("Nairobi", obtained.getvalue().strip())
+            self.assertNotIn("Kenya", obtained.getvalue().strip())
+            shortcut = '{ "Holberton": "School", "Nairobi": "Kenya" }'
             command = 'City.update("{}", {})'.format(id, shortcut)
             HBNBCommand().onecmd(command)
             command = 'City.show("{}")'.format(id)
             HBNBCommand().onecmd(command)
             self.assertIn("Holberton", obtained.getvalue().strip())
             self.assertIn("School", obtained.getvalue().strip())
-            self.assertIn("Montevideo", obtained.getvalue().strip())
-            self.assertIn("Uruguay", obtained.getvalue().strip())
+            self.assertIn("Nairobi", obtained.getvalue().strip())
+            self.assertIn("Kenya", obtained.getvalue().strip())
 
     def test_update_dict_Amenity(self):
         with patch("sys.stdout", new=StringIO()) as obtained:
@@ -587,17 +587,17 @@ class TestHBNBCommand_all_method(unittest.TestCase):
             HBNBCommand().onecmd(command)
             self.assertNotIn("Holberton", obtained.getvalue().strip())
             self.assertNotIn("School", obtained.getvalue().strip())
-            self.assertNotIn("Montevideo", obtained.getvalue().strip())
-            self.assertNotIn("Uruguay", obtained.getvalue().strip())
-            shortcut = '{ "Holberton": "School", "Montevideo": "Uruguay" }'
+            self.assertNotIn("Nairobi", obtained.getvalue().strip())
+            self.assertNotIn("Kenya", obtained.getvalue().strip())
+            shortcut = '{ "Holberton": "School", "Nairobi": "Kenya" }'
             command = 'Amenity.update("{}", {})'.format(id, shortcut)
             HBNBCommand().onecmd(command)
             command = 'Amenity.show("{}")'.format(id)
             HBNBCommand().onecmd(command)
             self.assertIn("Holberton", obtained.getvalue().strip())
             self.assertIn("School", obtained.getvalue().strip())
-            self.assertIn("Montevideo", obtained.getvalue().strip())
-            self.assertIn("Uruguay", obtained.getvalue().strip())
+            self.assertIn("Nairobi", obtained.getvalue().strip())
+            self.assertIn("Kenya", obtained.getvalue().strip())
 
     def test_update_dict_Place(self):
         with patch("sys.stdout", new=StringIO()) as obtained:
@@ -607,17 +607,17 @@ class TestHBNBCommand_all_method(unittest.TestCase):
             HBNBCommand().onecmd(command)
             self.assertNotIn("Holberton", obtained.getvalue().strip())
             self.assertNotIn("School", obtained.getvalue().strip())
-            self.assertNotIn("Montevideo", obtained.getvalue().strip())
-            self.assertNotIn("Uruguay", obtained.getvalue().strip())
-            shortcut = '{ "Holberton": "School", "Montevideo": "Uruguay" }'
+            self.assertNotIn("Nairobi", obtained.getvalue().strip())
+            self.assertNotIn("Kenya", obtained.getvalue().strip())
+            shortcut = '{ "Holberton": "School", "Nairobi": "Kenya" }'
             command = 'Place.update("{}", {})'.format(id, shortcut)
             HBNBCommand().onecmd(command)
             command = 'Place.show("{}")'.format(id)
             HBNBCommand().onecmd(command)
             self.assertIn("Holberton", obtained.getvalue().strip())
             self.assertIn("School", obtained.getvalue().strip())
-            self.assertIn("Montevideo", obtained.getvalue().strip())
-            self.assertIn("Uruguay", obtained.getvalue().strip())
+            self.assertIn("Nairobi", obtained.getvalue().strip())
+            self.assertIn("Kenya", obtained.getvalue().strip())
 
     def test_update_dict_Review(self):
         with patch("sys.stdout", new=StringIO()) as obtained:
@@ -627,17 +627,17 @@ class TestHBNBCommand_all_method(unittest.TestCase):
             HBNBCommand().onecmd(command)
             self.assertNotIn("Holberton", obtained.getvalue().strip())
             self.assertNotIn("School", obtained.getvalue().strip())
-            self.assertNotIn("Montevideo", obtained.getvalue().strip())
-            self.assertNotIn("Uruguay", obtained.getvalue().strip())
-            shortcut = '{ "Holberton": "School", "Montevideo": "Uruguay" }'
+            self.assertNotIn("Nairobi", obtained.getvalue().strip())
+            self.assertNotIn("Kenya", obtained.getvalue().strip())
+            shortcut = '{ "Holberton": "School", "Nairobi": "Kenya" }'
             command = 'Review.update("{}", {})'.format(id, shortcut)
             HBNBCommand().onecmd(command)
             command = 'Review.show("{}")'.format(id)
             HBNBCommand().onecmd(command)
             self.assertIn("Holberton", obtained.getvalue().strip())
             self.assertIn("School", obtained.getvalue().strip())
-            self.assertIn("Montevideo", obtained.getvalue().strip())
-            self.assertIn("Uruguay", obtained.getvalue().strip())
+            self.assertIn("Nairobi", obtained.getvalue().strip())
+            self.assertIn("Kenya", obtained.getvalue().strip())
 
 
 class TestHBNBCommand_all_method(unittest.TestCase):
